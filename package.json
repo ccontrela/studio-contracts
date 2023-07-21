@@ -1,0 +1,42 @@
+{
+  "name": "smart-contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "testDebug": "cross-env DEBUG=true npx hardhat test",
+    "gasCost": "cross-env REPORT_GAS=true npx hardhat test",
+    "coverage": "hardhat coverage",
+    "compile": "hardhat compile",
+    "remixd": "remixd -s ./ -u https://remix.ethereum.org",
+    "start": "run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@anders-t/ethers-ledger": "^1.0.4",
+    "@defi-wonderland/smock": "^2.3.0",
+    "@massless.io/smart-contract-library": "^2.0.1-alpha.11",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@openzeppelin/contracts": "^4.7.3",
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "@remix-project/remixd": "^0.6.6",
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "chai": "^4.3.6",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.2",
+    "ethers": "^5.7.1",
+    "fast-csv": "^4.3.6",
+    "hardhat": "^2.11.2",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.32",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.0",
+    "typescript": "^4.8.3",
+    "web3": "^1.8.0"
+  }
+}
